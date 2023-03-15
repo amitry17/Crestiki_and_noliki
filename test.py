@@ -57,13 +57,13 @@ while game_over == False:
       if first_player == True:
             symbol = "O"
             print("Игрок O")
-            i = int(input("Введите значение x:"))
-            j = int(input("Введите значение y:"))
+            i = int(input("Введите значение y:"))
+            j = int(input("Введите значение x:"))
       else: 
             symbol = "X"
             print("Игрок X")
-            i = int(input("Введите значение x:"))
-            j = int(input("Введите значение y:"))  
+            i = int(input("Введите значение y:"))
+            j = int(input("Введите значение x:"))  
       player_step(i,j,symbol)
       
       win = who_win(play_ground) 
