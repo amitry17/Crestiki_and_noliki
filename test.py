@@ -51,6 +51,7 @@ def who_win(play_ground):
 # Цикл игры 
 game_over = False
 first_player = True
+count = 0
 while game_over == False:
       for i in range(4):
             print(*play_ground[i])
@@ -73,8 +74,12 @@ while game_over == False:
         game_over = False
 
       first_player = not first_player
-
+      
+      count += 1
+      if count == 9:
+            game_over = True
 for i in range(4):
     print(*play_ground[i]) 
-
-print("Победил", win)
+if count != 9:
+    print("Победил", win)
+else: print("*****НИЧЬЯ*****")
